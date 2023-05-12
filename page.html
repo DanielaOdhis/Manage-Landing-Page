@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam+Pro:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet">
+    <title>Manage</title>
+    <style>
+        .button{
+            background-color: tomato;
+            border:none;
+            color:white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            cursor: pointer;
+            border-radius: 50px;
+            font-size: small;
+            margin: 4px 2px;
+            height: 5px;
+            align-items:center;
+            justify-content: center;
+            resize: none;
+        }
+        .but{
+            background-color: tomato;
+            border:none;
+            color:white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            cursor: pointer;
+            border-radius: 50px;
+            font-size: small;
+            margin: auto;
+            height: 5px;
+            align-items:center;
+            justify-content: center;
+            resize: none;
+        }
+        .button1{
+            background-color: white;
+            border:none;
+            color:tomato;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            cursor: pointer;
+            border-radius: 50px;
+            font-size: small;
+            margin: auto;
+            height: 5px;
+            align-items:center;
+            justify-content: center;
+            resize: none;
+        }
+       body{
+        font-family: be vietnam pro;
+       }
+       textarea{
+        resize: none;
+       }
+    </style>
+   <script>
+    function validateEmail() {
+        const emailInput = document.getElementById("email");
+        const email = emailInput.value.trim();
+
+        // Regular expression for email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(email)) {
+          alert("Please enter a valid email address.");
+          emailInput.focus();
+          return false;
+        }
+
+        // Display output if email is valid
+        const outputTextarea = document.getElementById("output");
+        outputTextarea.value = "Email submitted: " + email;
+
+        return true;
+    }
+    </script>
+
+</head>
+<body background="images/bg-tablet-pattern.svg">
+    <div style="float:left; width: 300px; ">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="images/logo.svg" alt="logo" >
+    </div>
+    <div style="float:left; width:500px;">
+        <nav style="text-align: center;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href style="text-decoration: none; color:hsl(233, 12%, 13%);"><b style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pricing</b></a> &nbsp; &nbsp;
+            <a href style="text-decoration: none; color:hsl(233, 12%, 13%)"><b style="font-size: small;">Product</b></a> &nbsp; &nbsp;
+            <a href style="text-decoration: none; color:hsl(233, 12%, 13%);"><b style="font-size: small;">About Us</b></a>  &nbsp; &nbsp;
+            <a href style="text-decoration: none; color:hsl(233, 12%, 13%);"><b style="font-size: small;">Careers</b></a>   &nbsp; &nbsp;
+            <a href style="text-decoration: none; color:hsl(233, 12%, 13%);"><b style="font-size: small;">Community</b></a>  &nbsp; &nbsp;
+        </nav>
+    </div>
+    <div style=" width:300px;float:right;">
+        <button class="button" >            
+            Get Started
+        </button>
+    </div>
+    <div style="width: 250px; float:left;">
+        <br><br><br><br><br>
+        <h1 style="text-align: left; color:navy;";>Bring everyone together to build products.</h1>
+        <p style="font-size: small; ">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+        <button class="button" >            
+            Get Started
+        </button>
+    </div>
+    <div style="width: 450px;float:right;">
+        <br><br><br>
+        <img src="images/illustration-intro.svg" height="380px">
+    </div>
+    <div style="width:500px; float:left; height: 500px;">
+        <h2 style="text-align: left; color:navy; margin-left: 300px; "><br><br><br><br><br>What's different about Manage?</h2>
+        <p  style="margin-left: 300px; font-size: small;">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+    </div>
+    <div style="width: 550px;float:right;  margin-right: 100px;">
+        <button class="button">            
+            01
+        </button>
+        <h5 style="color:navy;">Track company-wide progress</h5>
+        <p style="font-size: small;" >See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+        <button class="button" >            
+            02
+        </button>
+        <h5 style="color:navy">Advanced built-in reports</h5>
+        <p style="font-size: small;" > Advanced built-in reports Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+        <button class="button" >            
+            03
+        </button>
+        <h5 style="color:navy;">Everything you need in one place</h5>
+        <p style="font-size: small;" >Everything you need in one place Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+        <br>
+    
+    </div>
+    <div style="width: 100%;height: 30%;display: grid;grid-template-columns: 30% 30% 30%; gap: 5%;">
+        <br>
+        <h1 style="color:navy;text-align: center; word-wrap: none;width: 100%; text-align: center; word-wrap: none;">What they've said</h1>
+        <br>
+        <figure style="float:left">
+          <img src="images/avatar-anisha.png">
+          <figcaption>
+            <p style="color:navy"><b>Anisha Li</b></p>
+            <p style="font-size: small;">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+          </figcaption>
+        </figure>
+        <figure style="float:left">
+          <img src="images/avatar-ali.png">
+          <figcaption>
+            <p style="color:navy"><b>Ali Bravo</b></p>
+            <p style="font-size: small;">“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+          </figcaption>
+        </figure>
+        <figure style="float:right">
+          <img src="images/avatar-richard.png">
+          <figcaption>
+            <p style="color:navy"><b>Richard Watts</b></p>
+            <p style="font-size: small;">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+          </figcaption>
+        </figure>    
+      </div>
+      
+    <!-- <div style="float:right;width: 250px;"> -->
+        <!-- <img src="images/avatar-shanai.png"> -->
+        <!-- <p style="color:navy"><b>Shanai Gough</b></p> -->
+        <!-- <p style="width: 250px; font-size: small;">“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p> -->
+    <!-- </div>**/ -->
+    <div style=" width:300px; text-align: center; margin: auto;">
+        <br><br>
+        <button class="but">            
+            Get Started
+        </button>
+        <br><br><br>
+    </div>
+    <div>
+    <footer style="position:relative; bottom: 0; width: 100%;">
+        <div class="divb" style="width: 100%; height: 160px; background-color: tomato; position: relative;">
+            <br>
+            <h2 style="color:white; width: 300px; text-align: left; margin-left: 100px;">Simplify how your team works today.</h2>
+            <div style="display: flex; float: right; text-align: right;">
+            <button class="button1">            
+                Get Started
+            </button>
+            </div>
+        </div>
+
+        <div class="divb" style="width: 100%; height: 250px;background-color: hsl(233, 12%, 13%); position: relative;">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="images/logo 1 (1).svg" alt="logo" style="left: 30%;">
+            <br>
+            <br>
+            <div style="float:left; margin-left: 400px;">
+                <a href style="color:white; text-decoration: none; font-size: small;">Home</a><br><br>
+                <a href style="color:white; text-decoration: none; font-size: small;">Pricing</a><br><br>
+                <a href style="color:white; text-decoration: none; font-size: small;">Products</a><br><br>
+                <a href style="color:white; text-decoration: none; font-size: small;">About Us</a><br><br>
+            </div>
+            <div style="float:right; margin-right: 600px;">
+                <a href style="color:white; text-decoration: none; font-size: small;">Careers</a><br><br>
+                <a href style="color:white; text-decoration: none; font-size: small;">Community</a><br><br>
+                <a href style="color:white; text-decoration: none; font-size: small;">Privacy Policy</a><br><br>
+            </div>
+            <div style="position: absolute; bottom: 0; left: 10%;transform: translateX(-50%);">
+                <img src="images/facebook.png" width="30px">
+                <img src="images/play.png" width="30px">
+                <img src="images/twitter.png" width="30px">
+                <img src="images/pinterest.png" width="30px">
+                <img src="images/instagram.png" width="30px">
+            </div>
+            <!--<div style="float: right; height: 100px;border: 15px;">
+                <form id="myForm" onsubmit="return false;">
+                <textarea id="output" rows="5" cols="30"  style="display:none; border:none;" required>Updates in your inbox...</textarea>
+                <button class="button" type="button" onclick="validateEmail()" style="float: right;"> Go</button>
+                </form>
+            </div>-->
+            <div class="col-md-12" style="float: right; margin-right: 100px;">
+                <p style="color:white; font-size: small;">Copyright 2020. All Rights Reserved</p>
+            </div>
+    </footer> 
+    </div>
+</body>
+</html>
