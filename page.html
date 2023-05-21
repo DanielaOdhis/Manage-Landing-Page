@@ -61,29 +61,44 @@
        textarea{
         resize: none;
        }
-    </style>
-   <script>
-    function validateEmail() {
-        const emailInput = document.getElementById("email");
-        const email = emailInput.value.trim();
-
-        // Regular expression for email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!emailRegex.test(email)) {
-          alert("Please enter a valid email address.");
-          emailInput.focus();
-          return false;
+       .button-go {
+            position: absolute;
+            bottom: 10;
+            right: 0;
         }
+        .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-        // Display output if email is valid
-        const outputTextarea = document.getElementById("output");
-        outputTextarea.value = "Email submitted: " + email;
+.input-container input {
+    flex: 1;
+    margin-right: 70px;
+}
 
-        return true;
-    }
+    </style>
+    <script>
+        function validateEmail() {
+            const emailInput = document.getElementById("email");
+            const email = emailInput.value.trim();
+
+            // Regular expression for email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                emailInput.focus();
+                return false;
+            }
+
+            // Display output if email is valid
+            const outputTextarea = document.getElementById("output");
+            outputTextarea.value = "Email submitted: " + email;
+
+            return true;
+        }
     </script>
-
 </head>
 <body background="images/bg-tablet-pattern.svg">
     <div style="float:left; width: 300px; ">
@@ -215,12 +230,15 @@
                 <img src="images/pinterest.png" width="30px">
                 <img src="images/instagram.png" width="30px">
             </div>
-            <!--<div style="float: right; height: 100px;border: 15px;">
-                <form id="myForm" onsubmit="return false;">
-                <textarea id="output" rows="5" cols="30"  style="display:none; border:none;" required>Updates in your inbox...</textarea>
-                <button class="button" type="button" onclick="validateEmail()" style="float: right;"> Go</button>
+            <div style="float: right; height: 100px;border: 15px;">
+                <form id="myForm" onsubmit="validateEmail(); return false;">
+                    <div class="input-container">
+                        <input type="email" id="email" value="Enter your email" style="border-radius: 10px; height:25px;">
+                        <button class="button button-go" type="submit" onclick="validateEmail()">Go</button>
+                    </div>
                 </form>
-            </div>-->
+                
+            </div>
             <div class="col-md-12" style="float: right; margin-right: 100px;">
                 <p style="color:white; font-size: small;">Copyright 2020. All Rights Reserved</p>
             </div>
